@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Minimalist Dark Tab",
+  "version": "1.0.0",
+  "description": "A minimalist, dark-themed new tab page with search and clock.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["topSites", "history", "tabs"]
+}
