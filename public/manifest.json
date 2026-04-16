@@ -6,5 +6,10 @@
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "permissions": ["topSites", "history", "tabs"]
+  "permissions": [
+    "topSites",
+    "history",
+    "tabs",
+    "bookmarks"
+  ]
 }
