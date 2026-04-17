@@ -4,8 +4,11 @@
 
 @layer base {
   body {
-    @apply antialiased;
+    @apply antialiased select-none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  }
+  input {
+    @apply select-text;
   }
 }
 
@@ -49,5 +52,15 @@
 
   .custom-scrollbar:hover::-webkit-scrollbar-thumb {
     background: rgba(156, 163, 175, 0.3);
+  }
+
+  @keyframes wiggle {
+    0% { transform: rotate(-0.5deg); }
+    50% { transform: rotate(0.8deg); }
+    100% { transform: rotate(-0.5deg); }
+  }
+
+  .animate-wiggle {
+    animation: wiggle 0.25s infinite ease-in-out;
   }
 }
