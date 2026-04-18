@@ -166,13 +166,14 @@ function App() {
             </div>
           </div>
 
-          <BottomNav onOpenDrawer={() => setIsDrawerOpen(true)} navigateTo={navigateTo} />
-          
-          {/* Version & Menu */}
-          <DashboardFooter onOpenTab={(tab) => {
-            setActiveSettingsTab(tab);
-            setIsSettingsOpen(true);
-          }} />
+          <BottomNav 
+            onOpenDrawer={() => setIsDrawerOpen(true)} 
+            navigateTo={navigateTo} 
+            onOpenTab={(tab) => {
+              setActiveSettingsTab(tab);
+              setIsSettingsOpen(true);
+            }} 
+          />
         </section>
 
         {/* TASKS SECTION */}
